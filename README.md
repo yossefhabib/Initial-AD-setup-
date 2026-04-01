@@ -102,6 +102,56 @@ Manage → Add roles and Features → Enable AD DS
 ## Step 4 - Connect Windows 11 Machine to AD Server
 
 
-## Technical Concepts Reinforced
+### Turn on the Windows 11 machine, then Path: 
+Settings --> About --> Advanced system settings --> Computer name --> Change
+Type in the domain name 
 
+<br />
+<br />
+<img width="889" height="741" alt="image" src="https://github.com/user-attachments/assets/96f63223-cc82-4731-9d32-0bf3d466e4ea" />
+
+
+<br />
+<br />
+
+### ❌ Received an error when trying to connect the domain. I need to manually change the DNS server to my domain controller before I can commit the change. 
+
+<br/> 
+<img width="778" height="833" alt="image" src="https://github.com/user-attachments/assets/96bb5e7c-a000-4c81-8dd6-d70042ffe7d8" />
+
+<br /> 
+<br />
+
+### Confirm that the DNS servers is pointing to the correct IP through ipconfig /all
+
+<img width="975" height="543" alt="image" src="https://github.com/user-attachments/assets/f3dd87a3-2067-4e5f-b0fb-9bd0bc623386" />
+
+<br /> 
+<br />
+
+### ✅ Go back and add the PC as a member of the domain 
+<br /> 
+<br />
+
+<img width="681" height="366" alt="image" src="https://github.com/user-attachments/assets/76e232c8-0d58-432c-bfe9-722bfb9fa671" />
+
+<br /> 
+<br />
+
+Step 5: Restart, then attempt to log in as one of the Users created in AD. For this case, I used John Doe from IT
+<br />  
+<br /> 
+
+<img width="975" height="765" alt="image" src="https://github.com/user-attachments/assets/83ce3ca5-5f62-48e8-a444-abe9143142e8" />
+
+<br /> 
+<br />
+
+## Technical Concepts Reinforced
+- Directory Services — How AD centralizes identity and access management across a domain.
+- Forest & Domain Architecture — The structural hierarchy of forests, trees, and domains in AD.
+- Organizational Units — Using OUs to logically group users as a foundation for policy and delegation.
+- DNS Dependency — AD's reliance on DNS for DC discovery and how misconfiguration breaks domain joins.
+- Credential Storage (NTDS.dit) — Where AD stores sensitive credential material and why it's a high-value attack target.
+- Network Segmentation — Isolating lab infrastructure to safely conduct attack simulations.
 
